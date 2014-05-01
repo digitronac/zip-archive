@@ -9,6 +9,6 @@ php:
   - 5.5
 
 script:
-  - php ./vendor/bin/phpunit --colors --configuration="tests/phpunit.xml.dist" --coverage-clover clover-zip-archive.xml
+  - php ./vendor/bin/phpunit --colors --configuration="tests/phpunit.xml.dist" --coverage-clover ./tests/clover-zip-archive.xml
   - php ./vendor/bin/coverage-checker.php ./tests/clover-zip-archive.xml 100
   - php ./vendor/bin/phpcs --standard=Rasserbia ./src --ignore=./tests/*

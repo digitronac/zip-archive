@@ -1,0 +1,31 @@
+{
+	"name": "digitronac/zip-archive",
+	"description": "easier directory zipping",
+    "repositories":
+    [
+        {
+            "type": "git",
+            "url": "https://github.com/digitronac/PHP_CodeSniffer.git"
+        }
+    ],
+	"config": 
+	{
+		"github-protocols": ["https"],
+		"process-timeout": 600
+	},
+    "autoload":
+    {
+        "psr-4": {"P11\\": "src/"}
+    },
+    "require":
+    {
+        "ext-zip": "*"
+    },
+    "require-dev":
+    {
+        "squizlabs/PHP_CodeSniffer": "dev-master#a8bcc502b625073be5b19f7bfca9d1ce188170e4",
+        "digitronac/coverage-checker": "1.0.0",
+        "phpunit/phpunit": "4.0.19"
+    },
+    "minimum-stability": "dev"
+}

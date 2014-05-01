@@ -5,7 +5,7 @@ class ZipArchiveTest extends \PHPUnit_Framework_TestCase
 {
     public function testMethodAddDirectoryShouldAddFilesAndFoldersRecursivelyToZipArchiveObject()
     {
-        $zipFile = '/home/brunox/tralala.zip';
+        $zipFile = __DIR__ . '/../../../tralala.zip';
         $zipArchive = new \P11\ZipArchive\ZipArchive();
         $zipArchive->open($zipFile, \ZipArchive::CREATE);
         $zipArchive->addDirectory(__DIR__ . '/_fixtures/root');
